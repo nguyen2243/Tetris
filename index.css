@@ -10,6 +10,6 @@ button {
   display: flex;
 }
 
-.nav-bar > button {
+.nav-bar > .w3-button {
   flex: 1;
 }

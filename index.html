@@ -6,13 +6,13 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Document</title>
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-        <link rel="stylesheet" href="tetris.css">
+        <link rel="stylesheet" href="index.css">
 </head>
 <body>
 <div class="w3-bar w3-black nav-bar">
                 <button class="w3-bar-item w3-button tablink" onclick="tetris(event,'introduction')">Giới thiệu về game</button>
                 <button class="w3-bar-item w3-button tablink" onclick="tetris(event, 'gameplay')">Giới thiệu cách chơi</button>
-                <button class="w3-bar-item w3-button tablink w3-red" onclick="tetris(event, 'game')">VÀO GAME</button>
+                <a class="w3-bar-item w3-button tablink w3-red" href="tetris.html">VÀO GAME</a>
                 <button class="w3-bar-item w3-button tablink" onclick="tetris(event, 'highscore')">Điểm cao</button>
                 <button class="w3-bar-item w3-button tablink" onclick="tetris(event, 'team')">Giới thiệu về team</button>
 </div>
@@ -63,7 +63,7 @@
         <div id="team" class="w3-container w3-border tetris" style="display:none">
                 <p style="text-align:justify;">Giới thiệu về thành viên của team</p>
         </div>
-        <script src="tetris.js"></script>
+        <script src="index.js"></script>
 </body>
 </html>
 
