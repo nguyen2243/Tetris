@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="tetris.css">
+</head>
+<body>
+<div class="w3-bar w3-black nav-bar">
+                <button class="w3-bar-item w3-button tablink" onclick="tetris(event,'introduction')">Giới thiệu về game</button>
+                <button class="w3-bar-item w3-button tablink" onclick="tetris(event, 'gameplay')">Giới thiệu cách chơi</button>
+                <button class="w3-bar-item w3-button tablink w3-red" onclick="tetris(event, 'game')">VÀO GAME</button>
+                <button class="w3-bar-item w3-button tablink" onclick="tetris(event, 'highscore')">Điểm cao</button>
+                <button class="w3-bar-item w3-button tablink" onclick="tetris(event, 'team')">Giới thiệu về team</button>
+</div>
+
+
+        <div id="introduction" class="w3-container w3-border tetris" style="display:none">
+                <h2 style="text-align:center;">TETRIS</h2>
+                <p style="text-align:justify;"> Tetris là một trò chơi điện tử đầu tiên được thiết kế và phát triển bởi Alexey Pajitnov.
+                </p>
+                <p style="text-align:justify;">Nó được tạo ra vào ngày 6 tháng 6 năm 1984, trong lúc ông đang làm việc tại Trung tâm Tính toán Dorodnicyn của Viện hàn lâm Khoa học Liên Xô tại Moskva.
+                </p>
+                <p style="text-align:justify;"> Ông lấy tên của trò chơi từ tiền tố “tetra” của tiếng Hy Lạp, có nghĩa là "bốn" (mỗi bộ phần trong trò chơi, gọi là Tetromino, có bốn phần) và “tennis” - trò thể thao Pajitnov thích nhất.
+                </p>
+                <p style="text-align:justify;">Trò chơi (hay một biến thể của nó) được bán cho hầu hết mọi máy trò chơi điện tử và hệ điều hành máy tính, cũng như trong các máy tính đồ hoạ, điên thoại di động, máy nghe nhạc di động, PDA, và nhiều thứ khác. 
+                </p>
+                <p style="text-align:justify;">Tuy nhiều biến thể của Tetris được bán trên thị trường vào thập niên 1980, trò chơi cầm tay của Game Boy, ra mắt năm 1989 đã biến trò chơi thành một trong những trò chơi thịnh hành nhất. Số thứ 100 của tạp chí Electronic Gameboy Monthly gọi Tetris là "Trò chơi vĩ đại nhất trong mọi thời đại". Nó đã bán được hơn 170 triệu phiên bản.
+                </p>
+        </div>
+        
+        <div id="gameplay" class="w3-container w3-border tetris" style="display:none">
+                <h2>Hướng dẫn cách chơi</h2>
+                <p style="text-align:justify;">Mục tiêu của trò chơi là di chuyển các khối gạch đang rơi từ từ xuống trong kích thước hình chữ nhật 20 hàng x 10 cột.
+                </p> 
+                <p style="text-align:justify;">Một nhóm 4 khối sẽ rơi từ phía trên cùng của màn hình, di chuyển các khối và xoay chúng cho đến khi chúng rơi xuống phía dưới cùng của màn hình, sau đó nhóm 4 khối tiếp theo sẽ rơi xuống.
+                </p>
+                <p style="text-align:justify;">Chỗ nào có gạch rồi thì không di chuyển được tới vị trí đó.
+                </p>
+                <p style="text-align:justify;">Người chơi xếp những khối hình sao cho khối hình lấp đầy 1 hàng ngang để ghi điểm và hàng ngang ấy sẽ biến mất.
+                </p>
+                <p style="text-align:justify;">Nếu để cho những khối hình cao quá màn hình, trò chơi sẽ kết thúc.
+                </p>
+                <p style="text-align:justify;">Tất cả các Tetriminos có khả năng hoàn thành một và hai dòng. J, L có thể có ba. Chỉ có Tetrimino chữ I có khả năng để xóa bốn dòng cùng một lúc, và điều này được gọi là một “Tetris”. Xóa nhiều nhất chỉ được 4 hàng/1 lần.
+                </p>
+                <p style="text-align:justify;">Phím tắt:
+                        phím mũi tên lên - xoay khối,
+                        phím mũi tên trái - di chuyển sang trái,
+                        phím mũi tên phải: di chuyển sang phải,
+                        phím mũi tên xuống: tăng tốc độ rơi.
+                        </p>
+        </div>
+        
+        <div id="game" class="w3-container w3-border tetris">
+                <h2 style="text-align:center;">VÀO GAME</h2>
+        </div>
+        <div id="highscore" class="w3-container w3-border tetris" style="display:none">
+                <p style="text-align:justify;">Lưu giữ điểm cao của trò chơi</p>
+        </div>
+        <div id="team" class="w3-container w3-border tetris" style="display:none">
+                <p style="text-align:justify;">Giới thiệu về thành viên của team</p>
+        </div>
+        <script src="tetris.js"></script>
+</body>
+</html>
+
