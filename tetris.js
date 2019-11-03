@@ -280,3 +280,39 @@ window.onload = () => {
   }
   render(game)
 }
+var myGamePiece;
+var myObstacles = [];
+var mySound;
+var myMusic;
+function startGame() {
+    myMusic = new sound ("backgroundmusic.mp3");
+    myMusic.play();
+    
+}
+startGame();
+function sound(src) {
+    this.sound = document.createElement("audio");
+    this.sound.src = src;
+    console.log(src);
+    
+    this.sound.setAttribute("preload", "auto");
+    this.sound.setAttribute("controls", "none");
+    this.sound.setAttribute('muted', 'muted');
+    this.sound.style.display = "none";
+    document.body.appendChild(this.sound);
+    this.play = function(){
+        var promise = this.sound.play();
+        this.sound.muted = false;
+        if (promise !== undefined) {
+            promise.then(_ => {
+                // Autoplay started!
+            }).catch(error => {
+                // Autoplay was prevented.
+                // Show a "Play" button so that user can start playback.
+            });
+        }
+    }
+    this.stop = function(){
+        this.sound.pause();
+    }    
+}
